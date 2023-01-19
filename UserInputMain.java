@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class UserInputMain {
 
     public static void main(String[] args) {
         int currentYear = 2022;
