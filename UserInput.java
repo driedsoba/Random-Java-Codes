@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Test {
+public class UserInput {
     public static void main(String[] args) {
 
         int num1, num2, num3, num4, num5, sum, product, min, max;
