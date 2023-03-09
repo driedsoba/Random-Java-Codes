@@ -11,16 +11,19 @@ public class Printer {
     }
 
     public int addToner(int tonerAmount) {
-
-        int tempAmount = tonerAmount + tonerLevel;  // not going to change original value of tonerLevel
-        if (tempAmount > 100 || tempAmount < 0) {
-            return -1;
+        
+        int tempAmount = tonerAmount + tonerLevel;
+        
+            if (tempAmount> 100 || tonerAmount <= 0 || tonerAmount > 100) {
+                return -1;
+            } else {
+                tonerLevel += tonerAmount;
+                return tonerLevel;
+            }
         }
-        tonerLevel += tonerAmount;
-        return tonerLevel;
-    }
 
     public int printPages(int pages) {
+
         int jobPages = (duplex) ? (pages / 2) + (pages % 2) : pages;
         pagesPrinted += jobPages;
         return jobPages;
