@@ -1,5 +1,3 @@
-package dev.lpa;
-
 public abstract class Animal {
 
     protected String type;
